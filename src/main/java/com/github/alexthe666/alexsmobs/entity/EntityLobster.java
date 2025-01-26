@@ -93,6 +93,7 @@ public class EntityLobster extends WaterAnimal implements ISemiAquatic, Bucketab
             case 3 -> "redblue";
             case 4 -> "black";
             case 5 -> "white";
+            case 6 -> "orange";
             default -> "red";
         };
     }
@@ -267,6 +268,8 @@ public class EntityLobster extends WaterAnimal implements ISemiAquatic, Bucketab
             this.setVariant(3);
         }else if(variantChange <= 0.1F){
             this.setVariant(2);
+        }else if(variantChange <= 0.15F){
+            this.setVariant(6);
         }else if(variantChange <= 0.25F){
             this.setVariant(1);
         }else{
